@@ -156,6 +156,10 @@ li.btn:hover {
   margin: 4px 0;
   background-color: #000;
 }
+.landing .burger[aria-expanded=true] {
+  position: fixed;
+  top: 40px;
+}
 .landing .burger[aria-expanded=true] span {
   margin: 0;
   background-color: #fff;
@@ -184,7 +188,7 @@ li.btn:hover {
   box-sizing: border-box;
 }
 
-body {
+.wraper {
   overflow-X: hidden;
 }
 
@@ -273,12 +277,12 @@ img {
 }
 .content .holder .right::after {
   content: "";
-  width: 120%;
+  width: 100%;
   height: 40%;
   position: absolute;
   background-color: hsl(231deg, 69%, 60%);
   bottom: 0px;
-  right: -50%;
+  left: 20%;
   z-index: -1;
   border-bottom-left-radius: 100px;
 }
